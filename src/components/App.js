@@ -2,35 +2,60 @@ import React, { Component } from 'react';
 //import logo from '../logo.png';
 import './App.css';
 import Web3 from 'web3'
+import Meme from '../abis/Meme.json'
 
 
 //connecting ipfs-http in nodejs
 const ipfsClient = require('ipfs-http-client')
 const ipfs = ipfsClient({host:'ipfs.infura.io',port: 5001, protocol: 'https'})
-class App extends Component {
 
+
+class App extends Component {
+   //this will run before page loads
+   //this will connect to web3 and loadblock chain data
   async componentWillMount() {
     await this.loadWeb3()
+    await this.loadBlockchainData()
   }
 
   //get the account
   //get the network
   // gwt smart contract
   // get Meme Hash
-  async localBlockchainData(){
+  async loadBlockchainData(){
     const web3 = window.web3
     const account = await web3.eth.getAccounts()
+    this.setState({account: account[0]})
+    const networkId = await web3.eth.net.getId()
+    const networkData = Meme.networks[networkId]
+    if(networkData){
+      //Fetch contract
+      const abi = Meme.abi
+      const address = networkData.address
+      const contract = web3.eth.Contract(abi, address)
+      this.setState({contract})
+      //console.log(console)
+      const memeHash = await contract.methods.get().call()
+      this.setState({memeHash})
+
+    }else{
+      window.alert('Smart contract not deployed to detected network')
+
+    }
+    console.log(account)
   }
 
   constructor(props) {
     super(props);
     this.state = {
       buffer:null,
+      contract: null,
       file_hash:'QmSQMWVmBfNCyadD6Wbg4RVDAEfsPnQDKfU4eSu9S14dtf'
       //QmSQMWVmBfNCyadD6Wbg4RVDAEfsPnQDKfU4eSu9S14dtf
  
     };
   } 
+  //this connects web3 and smartcontract
   async loadWeb3(){
     if(window.ethereum){
       console.log('eth')
@@ -72,6 +97,9 @@ class App extends Component {
         console.error(error)
         return
        }
+       this.state.contract.methods.set(file_hash).send({ from: this.state.account }).then((r) =>{
+         this.setState({file_hash})
+       })
       })
   }
    
@@ -79,26 +107,21 @@ class App extends Component {
     return (
       <div>
         <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-          <a
-            className="navbar-brand col-sm-3 col-md-2 mr-0"
-            href="http://www.dappuniversity.com/bootcamp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        
             ipfs_upload
-          </a>
+         
+          <ul className="navbar-nav px3">
+            <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
+              <small className="text-white">{this.state.account}</small>
+            </li>
+          </ul>
         </nav>
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto">
-                <a
-                  href="http://www.dappuniversity.com/bootcamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={`https://ipfs.infura.io/ipfs/${this.state.file_hash}`} style={{height:"600px", width:"800px"}}  />
-                </a>
+                <img src={`https://ipfs.infura.io/ipfs/${this.state.file_hash}`} style={{height:"600px", width:"800px"}}  />
+                
                 <p>&nbsp;</p>
                 <h2>FILE UPLOAD</h2>
                 <form onSubmit={this.onSubmit}>
