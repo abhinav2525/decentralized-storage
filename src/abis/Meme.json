@@ -1,0 +1,583 @@
+{
+  "contractName": "Meme",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_memeHash",
+          "type": "string"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x4ed3885e"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x6d4ce63c"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506103e6806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634ed3885e146100515780636d4ce63c1461007a575b600080fd5b34801561005d57600080fd5b506100786004803603610073919081019061025c565b6100a5565b005b34801561008657600080fd5b5061008f6100bf565b60405161009c91906102d3565b60405180910390f35b80600090805190602001906100bb929190610161565b5050565b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101575780601f1061012c57610100808354040283529160200191610157565b820191906000526020600020905b81548152906001019060200180831161013a57829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101a257805160ff19168380011785556101d0565b828001600101855582156101d0579182015b828111156101cf5782518255916020019190600101906101b4565b5b5090506101dd91906101e1565b5090565b61020391905b808211156101ff5760008160009055506001016101e7565b5090565b90565b600082601f830112151561021957600080fd5b813561022c61022782610322565b6102f5565b9150808252602083016020830185838301111561024857600080fd5b610253838284610359565b50505092915050565b60006020828403121561026e57600080fd5b600082013567ffffffffffffffff81111561028857600080fd5b61029484828501610206565b91505092915050565b60006102a88261034e565b8084526102bc816020860160208601610368565b6102c58161039b565b602085010191505092915050565b600060208201905081810360008301526102ed818461029d565b905092915050565b6000604051905081810181811067ffffffffffffffff8211171561031857600080fd5b8060405250919050565b600067ffffffffffffffff82111561033957600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b82818337600083830152505050565b60005b8381101561038657808201518184015260208101905061036b565b83811115610395576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a7230582081f8174b7d148f1343955c2148796161d90e28199314e1475d1c918a2dfda5a26c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634ed3885e146100515780636d4ce63c1461007a575b600080fd5b34801561005d57600080fd5b506100786004803603610073919081019061025c565b6100a5565b005b34801561008657600080fd5b5061008f6100bf565b60405161009c91906102d3565b60405180910390f35b80600090805190602001906100bb929190610161565b5050565b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101575780601f1061012c57610100808354040283529160200191610157565b820191906000526020600020905b81548152906001019060200180831161013a57829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101a257805160ff19168380011785556101d0565b828001600101855582156101d0579182015b828111156101cf5782518255916020019190600101906101b4565b5b5090506101dd91906101e1565b5090565b61020391905b808211156101ff5760008160009055506001016101e7565b5090565b90565b600082601f830112151561021957600080fd5b813561022c61022782610322565b6102f5565b9150808252602083016020830185838301111561024857600080fd5b610253838284610359565b50505092915050565b60006020828403121561026e57600080fd5b600082013567ffffffffffffffff81111561028857600080fd5b61029484828501610206565b91505092915050565b60006102a88261034e565b8084526102bc816020860160208601610368565b6102c58161039b565b602085010191505092915050565b600060208201905081810360008301526102ed818461029d565b905092915050565b6000604051905081810181811067ffffffffffffffff8211171561031857600080fd5b8060405250919050565b600067ffffffffffffffff82111561033957600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b82818337600083830152505050565b60005b8381101561038657808201518184015260208101905061036b565b83811115610395576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a7230582081f8174b7d148f1343955c2148796161d90e28199314e1475d1c918a2dfda5a26c6578706572696d656e74616cf50037",
+  "sourceMap": "59:233:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:233:0;;;;;;;",
+  "deployedSourceMap": "59:233:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;116:76;;8:9:-1;5:2;;;30:1;27;20:12;5:2;116:76:0;;;;;;;;;;;;;;;;;;;213:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;213:77:0;;;;;;;;;;;;;;;;;;;;116:76;178:9;167:8;:20;;;;;;;;;;;;:::i;:::-;;116:76;:::o;213:77::-;249:13;277:8;270:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;213:77;:::o;59:233::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;6:442:-1:-;;108:3;101:4;93:6;89:17;85:27;78:35;75:2;;;126:1;123;116:12;75:2;163:6;150:20;185:65;200:49;242:6;200:49;;;185:65;;;176:74;;270:6;263:5;256:21;306:4;298:6;294:17;339:4;332:5;328:16;374:3;365:6;360:3;356:16;353:25;350:2;;;391:1;388;381:12;350:2;401:41;435:6;430:3;425;401:41;;;68:380;;;;;;;;456:347;;570:2;558:9;549:7;545:23;541:32;538:2;;;586:1;583;576:12;538:2;649:1;638:9;634:17;621:31;672:18;664:6;661:30;658:2;;;704:1;701;694:12;658:2;724:63;779:7;770:6;759:9;755:22;724:63;;;714:73;;600:193;532:271;;;;;810:300;;912:39;945:5;912:39;;;968:6;963:3;956:19;980:63;1036:6;1029:4;1024:3;1020:14;1013:4;1006:5;1002:16;980:63;;;1075:29;1097:6;1075:29;;;1068:4;1063:3;1059:14;1055:50;1048:57;;892:218;;;;;;1117:281;;1245:2;1234:9;1230:18;1222:26;;1295:9;1289:4;1285:20;1281:1;1270:9;1266:17;1259:47;1320:68;1383:4;1374:6;1320:68;;;1312:76;;1216:182;;;;;1405:256;;1467:2;1461:9;1451:19;;1505:4;1497:6;1493:17;1604:6;1592:10;1589:22;1568:18;1556:10;1553:34;1550:62;1547:2;;;1625:1;1622;1615:12;1547:2;1645:10;1641:2;1634:22;1445:216;;;;;1668:259;;1812:18;1804:6;1801:30;1798:2;;;1844:1;1841;1834:12;1798:2;1888:4;1884:9;1877:4;1869:6;1865:17;1861:33;1853:41;;1917:4;1911;1907:15;1899:23;;1735:192;;;;1934:92;;2015:5;2009:12;1999:22;;1993:33;;;;2034:145;2115:6;2110:3;2105;2092:30;2171:1;2162:6;2157:3;2153:16;2146:27;2085:94;;;;2188:268;2253:1;2260:101;2274:6;2271:1;2268:13;2260:101;;;2350:1;2345:3;2341:11;2335:18;2331:1;2326:3;2322:11;2315:39;2296:2;2293:1;2289:10;2284:15;;2260:101;;;2376:6;2373:1;2370:13;2367:2;;;2441:1;2432:6;2427:3;2423:16;2416:27;2367:2;2237:219;;;;;2464:97;;2552:2;2548:7;2543:2;2536:5;2532:14;2528:28;2518:38;;2512:49;;;",
+  "source": "pragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\ncontract Meme {\n\n string memeHash;\n   //Write function\n  function set(string memory _memeHash) public {\n    memeHash = _memeHash;\n  }\n   //read fuction\n  function get() public view returns (string memory) {\n    return memeHash;\n  }\n}\n\n",
+  "sourcePath": "/Users/abhinav/ipfs_upload/src/contracts/Meme.sol",
+  "ast": {
+    "absolutePath": "/Users/abhinav/ipfs_upload/src/contracts/Meme.sol",
+    "exportedSymbols": {
+      "Meme": [
+        23
+      ]
+    },
+    "id": 24,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 23,
+        "linearizedBaseContracts": [
+          23
+        ],
+        "name": "Meme",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "memeHash",
+            "nodeType": "VariableDeclaration",
+            "scope": 23,
+            "src": "77:15:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 3,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "77:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 13,
+              "nodeType": "Block",
+              "src": "161:31:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "memeHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "167:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 10,
+                      "name": "_memeHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "178:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "167:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 12,
+                  "nodeType": "ExpressionStatement",
+                  "src": "167:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 14,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "_memeHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "129:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "129:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "128:25:0"
+            },
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "161:0:0"
+            },
+            "scope": 23,
+            "src": "116:76:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 21,
+              "nodeType": "Block",
+              "src": "264:26:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 19,
+                    "name": "memeHash",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4,
+                    "src": "277:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 18,
+                  "id": 20,
+                  "nodeType": "Return",
+                  "src": "270:15:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 22,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "225:2:0"
+            },
+            "returnParameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "249:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "249:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "248:15:0"
+            },
+            "scope": 23,
+            "src": "213:77:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 24,
+        "src": "59:233:0"
+      }
+    ],
+    "src": "0:294:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/abhinav/ipfs_upload/src/contracts/Meme.sol",
+    "exportedSymbols": {
+      "Meme": [
+        23
+      ]
+    },
+    "id": 24,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 23,
+        "linearizedBaseContracts": [
+          23
+        ],
+        "name": "Meme",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "memeHash",
+            "nodeType": "VariableDeclaration",
+            "scope": 23,
+            "src": "77:15:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 3,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "77:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 13,
+              "nodeType": "Block",
+              "src": "161:31:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "memeHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "167:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 10,
+                      "name": "_memeHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "178:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "167:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 12,
+                  "nodeType": "ExpressionStatement",
+                  "src": "167:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 14,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "_memeHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "129:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "129:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "128:25:0"
+            },
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "161:0:0"
+            },
+            "scope": 23,
+            "src": "116:76:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 21,
+              "nodeType": "Block",
+              "src": "264:26:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 19,
+                    "name": "memeHash",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4,
+                    "src": "277:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 18,
+                  "id": 20,
+                  "nodeType": "Return",
+                  "src": "270:15:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 22,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "225:2:0"
+            },
+            "returnParameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "249:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "249:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "248:15:0"
+            },
+            "scope": 23,
+            "src": "213:77:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 24,
+        "src": "59:233:0"
+      }
+    ],
+    "src": "0:294:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xeDBA11F99a45a05355164d7A21d114342BB55254",
+      "transactionHash": "0xd50c3adb505eeead8696128853f12690b17d5c8ee7aa9251a1c86529bec129df"
+    }
+  },
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2021-04-18T13:05:19.534Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
