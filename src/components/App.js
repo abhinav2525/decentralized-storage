@@ -108,7 +108,7 @@ class App extends Component {
       <div>
         <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
         
-            ipfs_upload
+          <small className="text-white">DECENTRALIZED FILE STORAGE SYSTEM USING BLOCKCHAIN</small>
          
           <ul className="navbar-nav px3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
